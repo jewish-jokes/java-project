@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<AnchorPane fx:id="headerPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="852.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gui.controller.admin.ChangeAllTaxesController">
+    <children>
+        <AnchorPane fx:id="mainPane" layoutX="-1.0" layoutY="58.0" prefHeight="591.0" prefWidth="852.0"
+                    AnchorPane.topAnchor="58.0">
+            <children>
+                <ImageView fitHeight="650.0" fitWidth="852.0" layoutX="0.0" layoutY="30.0">
+                    <image>
+                        <Image url="@../../images/airplane.jpg"/>
+                    </image>
+                </ImageView>
+                <VBox fx:id="leftPane" alignment="TOP_CENTER" layoutX="273.0" layoutY="50.0" prefHeight="484.0"
+                      prefWidth="302.0" spacing="25.0" AnchorPane.topAnchor="42.0">
+                    <children>
+                        <Button fx:id="changeExportImportTaxesButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0"
+                                text="Экспорт/импорт">
+                            <font>
+                                <Font name="Euclid Math One Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="changeCostTaxesButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="302.0"
+                                text="Цену товара">
+                            <font>
+                                <Font name="Euclid Math One Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="changeTypeTaxesButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0"
+                                text="Тип товара">
+                            <font>
+                                <Font name="Euclid Math One Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="goBackButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="208.0"
+                                text="Назад">
+                            <font>
+                                <Font name="Euclid Math One Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                    <padding>
+                        <Insets top="20.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <Label fx:id="headLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="822.0"
+               text="Изменить размер сборов на: " textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Euclid Fraktur Bold" size="28.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

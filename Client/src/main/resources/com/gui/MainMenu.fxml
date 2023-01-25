@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="headerPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.controller.general.MainMenuController">
+    <children>
+        <ImageView fitHeight="650.0" fitWidth="852.0" layoutX="0.0" layoutY="70.0">
+            <image>
+                <Image url="@../../images/pogranpost.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="mainPane" layoutY="210.0" prefHeight="591.0" prefWidth="850.0">
+            <children>
+                <Button fx:id="signInButton" layoutX="319.0" layoutY="81.0" mnemonicParsing="false" onAction="#switchToSignInScene" prefHeight="66.0" prefWidth="207.0" text="ВОЙТИ">
+                    <font>
+                        <Font name="Times New Romans" size="30.0" />
+                    </font>
+                </Button>
+                <Button fx:id="registrationButton" layoutX="238.0" layoutY="198.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefHeight="66.0" prefWidth="369.0" text="ЗАРЕГИСТРИРОВАТЬСЯ">
+                    <font>
+                        <Font name="Times New Romans" size="30.0" />
+                    </font>
+                </Button>
+
+            </children>
+        </AnchorPane>
+        <Label fx:id="headLabel" alignment="CENTER" layoutX="85.0" layoutY="7.0" prefHeight="55.0" prefWidth="680.0" text="СИСТЕМА ПОДСЧЕТА ТАМОЖЕННЫХ ПОШЛИН" textAlignment="CENTER">
+            <font>
+                <Font name="Times New Romans" size="30.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
